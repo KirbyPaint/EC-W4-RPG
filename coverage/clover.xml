@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1612389893123" clover="3.2.0">
-  <project timestamp="1612389893123" name="All files">
+<coverage generated="1612390272672" clover="3.2.0">
+  <project timestamp="1612390272673" name="All files">
     <metrics statements="24" coveredstatements="10" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="2" elements="31" coveredelements="12" complexity="0" loc="24" ncloc="24" packages="1" files="2" classes="2"/>
     <file name="RPG.js" path="C:\Users\porte\Desktop\Epicodus\rpg\src\RPG.js">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="3" count="2" type="stmt"/>
-      <line num="4" count="2" type="stmt"/>
-      <line num="5" count="2" type="stmt"/>
+      <line num="3" count="3" type="stmt"/>
+      <line num="4" count="3" type="stmt"/>
+      <line num="5" count="3" type="stmt"/>
     </file>
     <file name="archetypes.js" path="C:\Users\porte\Desktop\Epicodus\rpg\src\archetypes.js">
       <metrics statements="21" coveredstatements="7" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="1"/>
