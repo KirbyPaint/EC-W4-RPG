@@ -23,8 +23,12 @@ describe('Character', () => {
   test('choosing warrior will take the BaseClassStats and run it through archetypeSelection function to add stats for Warrior selection', () => {
     const newArchetype = new BaseClassStats("warrior");
     newArchetype.archetypeSelection("warrior");
-
     expect(newArchetype.strength).toEqual(20);
+    expect(newArchetype.dexterity).toEqual(10);
+    expect(newArchetype.constitution).toEqual(10);
+    expect(newArchetype.intellect).toEqual(0);
+    expect(newArchetype.wisdom).toEqual(0);
+    expect(newArchetype.charisma).toEqual(0);
   });
 
 
