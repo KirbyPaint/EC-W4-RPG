@@ -15,14 +15,13 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: '',
+      title: 'RPG',
       template: './src/index.html',
       inject: 'body'
     })
   ],
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.css$/,
         use: [
           'style-loader',
@@ -37,3 +36,4 @@ module.exports = {
     ]
   }
 };
+P
