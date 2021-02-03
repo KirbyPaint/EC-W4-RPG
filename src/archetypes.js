@@ -10,15 +10,16 @@ export default class BaseClassStats {
   }
 
   archetypeSelection(archetype) {
-    if (this.archetype = "warrior") {
+    if (archetype === "warrior") {
       this.strength += 10;
       this.dexterity += 0;
       this.constitution += 0;
       this.intellect -= 10;
       this.wisdom -= 10;
       this.charisma -= 10;
+      return;
 
-    } else if (this.archetype = "ranger") {
+    } else if (archetype === "ranger") {
       this.strength += 0;
       this.constitution += 10;
       this.dexterity += 10;
