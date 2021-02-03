@@ -11,11 +11,16 @@ describe('Character', () => {
   });
 
   test('choosing warrior will take the BaseClassStats and run it through archetypeSelection function to add stats for Warrior selection', () => {
-    const warrior = new BaseClassStats("Warrior");
-    const newCharacter = new Character("JohnBoy", warrior.archetype, 1);
+    const newCharacter = new Character("JohnBoy", "warrior", 1);
+    // const newWarrior = new BaseClassStats.archetypeSelection("warrior");
     expect(newCharacter.name).toEqual("JohnBoy");
-    expect(newCharacter.archetype).toEqual("Warrior");
+    expect(newCharacter.archetype).toEqual("warrior");
     expect(newCharacter.level).toEqual(1);
+  });
+
+  test('Display the properties for chosen archetype, whatever it may be', () => {
+    const newArchetype = new BaseClassStats("warrior");
+    expect(newArchetype.constitution).toEqual(10);
   });
 
 });

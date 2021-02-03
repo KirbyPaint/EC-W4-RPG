@@ -1,5 +1,5 @@
 export default class BaseClassStats {
-  constructor(archetype, strength, dexterity, constitution, intellect, wisdom, charisma) {
+  constructor(archetype) {
     this.archetype = archetype;
     this.constitution = 10;
     this.strength = 10;
@@ -9,17 +9,18 @@ export default class BaseClassStats {
     this.charisma = 10;
   }
 
-
-  archetypeSelection() {
+  archetypeSelection(archetype) {
     if (this.archetype = "warrior") {
       this.strength += 10;
       this.dexterity += 0;
+      this.constitution += 0;
       this.intellect -= 10;
       this.wisdom -= 10;
       this.charisma -= 10;
 
     } else if (this.archetype = "ranger") {
       this.strength += 0;
+      this.constitution += 10;
       this.dexterity += 10;
       this.intellect -= 10;
       this.wisdom -= 10;
@@ -27,27 +28,6 @@ export default class BaseClassStats {
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // export default class Archetype{
 // constructor(archetype, strength, dexterity, constitution, intellect, wisdom, charisma)
 // this.archetype= archetype;

@@ -15,7 +15,7 @@ end_of_record
 TN:
 SF:C:\Users\porte\Desktop\Epicodus\rpg\src\archetypes.js
 FN:2,(anonymous_0)
-FN:13,(anonymous_1)
+FN:12,(anonymous_1)
 FNF:2
 FNH:1
 FNDA:1,(anonymous_0)
@@ -27,6 +27,7 @@ DA:6,1
 DA:7,1
 DA:8,1
 DA:9,1
+DA:13,0
 DA:14,0
 DA:15,0
 DA:16,0
@@ -39,10 +40,11 @@ DA:23,0
 DA:24,0
 DA:25,0
 DA:26,0
-LF:19
+DA:27,0
+LF:21
 LH:7
-BRDA:14,0,0,0
-BRDA:14,0,1,0
+BRDA:13,0,0,0
+BRDA:13,0,1,0
 BRDA:21,1,0,0
 BRDA:21,1,1,0
 BRF:4
