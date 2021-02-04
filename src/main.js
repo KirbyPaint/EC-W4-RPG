@@ -20,6 +20,27 @@ $('form').submit(function(event) {
   Cha is: ${RPG.charisma}`);
 });
 
+// $('form').submit(function(event) {
+//   event.preventDefault();
+//   const name = $('#name').val();
+//   const archetype = $('input:radio[name=classes]:checked').val();
+//   const RPG = new Character(name, archetype);
+//   const newSword = new Item(0, "Broadsword");
+//   console.log(RPG);
+//   RPG.archetypeSelection(archetype); // Necessary function to assign the stats' values
+//   $('#characterResult').text(`
+//   Strength is: ${RPG.strength}
+//   Dex is: ${RPG.dexterity}
+//   Con is: ${RPG.constitution}
+//   Int is: ${RPG.intellect}
+//   Wis is: ${RPG.wisdom}
+//   Cha is: ${RPG.charisma}`);
+
+//   RPG.inventory.set(newSword.itemID, newSword.itemName);
+//   console.log(`Inventory 0 is: ${RPG.inventory.get(0)}`);
+//   console.log(RPG.inventory);
+// });
+
 
 
 // function itemList()
