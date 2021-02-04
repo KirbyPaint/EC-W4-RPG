@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1612474128403" clover="3.2.0">
-  <project timestamp="1612474128404" name="All files">
+<coverage generated="1612475862928" clover="3.2.0">
+  <project timestamp="1612475862928" name="All files">
     <metrics statements="31" coveredstatements="27" conditionals="8" coveredconditionals="3" methods="4" coveredmethods="3" elements="43" coveredelements="33" complexity="0" loc="31" ncloc="31" packages="1" files="2" classes="2"/>
     <file name="RPG.js" path="C:\Users\porte\Desktop\Epicodus\rpg\src\RPG.js">
       <metrics statements="24" coveredstatements="24" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>

@@ -5,12 +5,18 @@ export default class Item {
     this.bonus = 0;
   }
 
-  createWeapon(itemID) {
-    if (itemID === 0) {
-      this.bonus += 10;
-    } else if (itemID === 1) {
-      this.bonus += 10;
+  createEquipment(character, archetype) {
+    if (archetype === "warrior") {
+      character.inventory.set(0, "broadsword")
+    } else if (archetype === "ranger") {
+      character.inventory.set(0, "Bow")
     }
+    character.inventory.set(1, "rags")
+      .set(2, "rags")
+      .set(3, "rags")
+      .set(4, "rags")
+      .set(5, "rags");
+    return character.inventory;
   }
 }
 
