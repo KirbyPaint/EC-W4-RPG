@@ -3,14 +3,21 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import Character from './RPG.js';
+import Item from './items.js';
 
 $('form').submit(function(event) {
   event.preventDefault();
   const name = $('#name').val();
   const archetype = $('input:radio[name=classes]:checked').val();
   const RPG = new Character(name, archetype);
+  const newSword = new Item(0, "Broadsword");
   console.log(RPG);
   RPG.archetypeSelection(archetype); // Necessary function to assign the stats' values
+  // Similar function here once the weapon is created, apply the stat modifier
+  RPG.inventory.set(newSword.itemID, newSword.itemName);
+  newSword.createWeapon(newSword.itemID);
+  console.log(newSword.bonus);
+  RPG.strength += newSword.bonus;
   $('#characterResult').text(`
   Strength is: ${RPG.strength}
   Dex is: ${RPG.dexterity}
