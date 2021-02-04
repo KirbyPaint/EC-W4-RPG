@@ -6,6 +6,26 @@
 </head>
 
 <body>
+  <div class="container">
+    <form>
+      <input type="text" id="name">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="classes" id="warrior" value="warrior" checked>
+        <label class="form-check-label" for="warrior">
+          Warrior
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="classes" id="ranger" value="ranger">
+        <label class="form-check-label" for="ranger">
+          Ranger
+        </label>
+      </div>
+      <button type="button submit" class="btn btn-primary">Create</button>
+    </form>
+    <div id="output">
+      <span id="characterResult"></span>
+    </div>
 </body>
 
 </html>

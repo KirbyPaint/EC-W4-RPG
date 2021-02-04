@@ -31,5 +31,16 @@ describe('Character', () => {
     expect(newArchetype.charisma).toEqual(0);
   });
 
+  test('choosing ranger will take the BaseClassStats and run it through archetypeSelection function to add stats for Ranger selection', () => {
+    const newArchetype = new BaseClassStats("ranger");
+    newArchetype.archetypeSelection("ranger");
+    expect(newArchetype.strength).toEqual(10);
+    expect(newArchetype.dexterity).toEqual(20);
+    expect(newArchetype.constitution).toEqual(20);
+    expect(newArchetype.intellect).toEqual(0);
+    expect(newArchetype.wisdom).toEqual(0);
+    expect(newArchetype.charisma).toEqual(30);
+  });
+
 
 });
