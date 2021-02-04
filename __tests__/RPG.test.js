@@ -1,9 +1,10 @@
-import BaseClassStats from '../src/archetypes.js';
+// import BaseClassStats from '../src/archetypes.js';
 import Character from '../src/RPG.js';
 
 describe('Character', () => {
 
   let newCharacter;
+  let newArchetype;
 
   beforeEach(() => {
     newCharacter = new Character("JohnBoy", "warrior", 1);
@@ -16,12 +17,13 @@ describe('Character', () => {
   });
 
   test('Display the properties for chosen archetype, whatever it may be', () => {
-    const newArchetype = new BaseClassStats("warrior");
+    newArchetype = new Character("warrior");
+    newArchetype.archetypeSelection("warrior");
     expect(newArchetype.constitution).toEqual(10);
   });
 
   test('choosing warrior will take the BaseClassStats and run it through archetypeSelection function to add stats for Warrior selection', () => {
-    const newArchetype = new BaseClassStats("warrior");
+    newArchetype = new Character("warrior");
     newArchetype.archetypeSelection("warrior");
     expect(newArchetype.strength).toEqual(20);
     expect(newArchetype.dexterity).toEqual(10);
@@ -32,7 +34,7 @@ describe('Character', () => {
   });
 
   test('choosing ranger will take the BaseClassStats and run it through archetypeSelection function to add stats for Ranger selection', () => {
-    const newArchetype = new BaseClassStats("ranger");
+    newArchetype = new Character("ranger");
     newArchetype.archetypeSelection("ranger");
     expect(newArchetype.strength).toEqual(10);
     expect(newArchetype.dexterity).toEqual(20);
@@ -41,6 +43,4 @@ describe('Character', () => {
     expect(newArchetype.wisdom).toEqual(0);
     expect(newArchetype.charisma).toEqual(30);
   });
-
-
 });
