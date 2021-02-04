@@ -26,7 +26,6 @@ $('form').submit(function(event) {
   console.log(RPG.inventory);
   newSword.createEquipment(RPG, archetype);
   // console.log(newSword.bonus);
-  RPG.strength += newSword.bonus;
   $('#characterResult').text(`
   Strength is: ${RPG.strength}
   Dex is: ${RPG.dexterity}
@@ -34,6 +33,7 @@ $('form').submit(function(event) {
   Int is: ${RPG.intellect}
   Wis is: ${RPG.wisdom}
   Cha is: ${RPG.charisma}`);
+  console.log(`Character strength for ${name} is ${RPG.strength}`);
 });
 
 // $('form').submit(function(event) {

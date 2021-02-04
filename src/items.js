@@ -2,12 +2,22 @@ export default class Item {
   constructor(itemID, itemName) {
     this.itemID = itemID;
     this.itemName = itemName;
-    this.bonus = 0;
+    this.constitutionBonus = 0;
+    this.strengthBonus = 0;
+    this.dexterityBonus = 0;
+    this.intellectBonus = 0;
+    this.wisdomBonus = 0;
+    this.charismaBonus = 0;
+    //this.bonus = 0;
   }
 
   createEquipment(character, archetype) {
     if (archetype === "warrior") {
       character.inventory.set(0, "broadsword")
+      this.strengthBonus = 10;
+      let result = (character.strength += this.strengthBonus);
+      console.log(result);
+      console.log(character.strength);
     } else if (archetype === "ranger") {
       character.inventory.set(0, "Bow")
     }
@@ -20,41 +30,7 @@ export default class Item {
   }
 }
 
-// export default class ItemList {
-//   constructor(itemId, itemType) {
-//     this.itemID = itemID;
-//     this.itemType = itemType;
-//     this.itemName = itemName;
-//   }
+// itemList {
+//   new Item(1, "Broadsword", 0, 10, 0, 0, 0, 0)
+//   new Item(1, "Broadsword", 0, 10, 0, 0, 0, 0)
 // }
-
-
-// if (item ID === 0 && ItemType === "weapon"
-
-//   then push itemID to matching index number and item type
-
-
-
-//   functions weaponList(); Longsword[1
-//     itemID = 0; itemType = "weapon"; itemName = "LongSword";
-//   ]
-
-//   Dagger[
-//     itemID = 1; itemType = "weapon"; itemName = "Dagger";
-//   ]
-
-//   armorList();
-
-//   Helmet itemID = 4 itemType = "armor"
-//   itemName = "Helmet of JESUS CHRIST MAKE IT STOP"
-
-
-
-//   for (i = 0, i <= inventory.length; i++)
-//     if (this.itemType = "weapon") {
-//       inventory.push[0](itemID, itemName);
-//       // inventory.set(0, "longsword");
-//     }
-//   if (this.itemType = "helmet") {
-//     itemType.push[1];
-//   }
