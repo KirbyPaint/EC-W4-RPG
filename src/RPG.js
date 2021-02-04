@@ -3,9 +3,16 @@ export default class Character {
     this.name = name;
     this.archetype = archetype;
     this.level = 1;
-
-
-
+    this.inventory = new Map(
+      [
+        [0, "weapon"],
+        [1, "helmet"],
+        [2, "chest"],
+        [3, "gloves"],
+        [4, "belt"],
+        [5, "shoes"]
+      ]
+    );
   }
 
   archetypeSelection(archetype) {
@@ -32,6 +39,4 @@ export default class Character {
       this.charisma += 20;
     }
   }
-
-
 }

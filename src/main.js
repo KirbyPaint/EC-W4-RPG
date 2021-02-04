@@ -19,3 +19,33 @@ $('form').submit(function(event) {
   Wis is: ${RPG.wisdom}
   Cha is: ${RPG.charisma}`);
 });
+
+
+
+// function itemList()
+
+// if value = 1 then iten is 
+// Longsword();
+// Let item val = 1  
+// this.strength += 5;
+
+
+// Staff(){
+//   let item val =2;
+//   this.iintellect +=10;
+//   this.wisdom+= 20;
+// }
+
+// helmet(){
+//   let item var = 3
+//   this.armor +=10;
+// }
+
+
+
+// play Inventory(){
+
+//   Inventory array = [0, 1, 3]
+// }
+
+// Player has on a Longsword and Helmet . Stats are modified to +5 str and +10 arm while in inventory array

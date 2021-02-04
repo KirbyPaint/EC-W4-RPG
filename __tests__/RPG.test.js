@@ -10,10 +10,19 @@ describe('Character', () => {
     newCharacter = new Character("JohnBoy", "warrior", 1);
   });
 
-  test('it should create a character with properties for their character name, archetype, and level', () => {
+  test('it should create a character with properties for their character name, archetype, level, and inventory', () => {
     expect(newCharacter.name).toEqual("JohnBoy");
     expect(newCharacter.archetype).toEqual("warrior");
     expect(newCharacter.level).toEqual(1);
+  });
+
+  test(`it should display the character's full inventory`, () => {
+    expect(newCharacter.inventory.get(0)).toEqual("weapon");
+    expect(newCharacter.inventory.get(1)).toEqual("helmet");
+    expect(newCharacter.inventory.get(2)).toEqual("chest");
+    expect(newCharacter.inventory.get(3)).toEqual("gloves");
+    expect(newCharacter.inventory.get(4)).toEqual("belt");
+    expect(newCharacter.inventory.get(5)).toEqual("shoes");
   });
 
   test('Display the properties for chosen archetype, whatever it may be', () => {
