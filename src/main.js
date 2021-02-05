@@ -8,6 +8,7 @@ import Item from './items.js';
 
 $('form').submit(function(event) {
   event.preventDefault();
+  $('#attack').show();
   const name = $('#name').val();
   const archetype = $('input:radio[name=classes]:checked').val();
   const RPG = new Character(name, archetype);
