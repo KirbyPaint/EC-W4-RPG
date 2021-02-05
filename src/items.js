@@ -15,9 +15,7 @@ export default class Item {
     if (archetype === "warrior") {
       character.inventory.set(0, "broadsword")
       this.strengthBonus = 10;
-      let result = (character.strength += this.strengthBonus);
-      console.log(result);
-      console.log(character.strength);
+      // let result = (character.strength += this.strengthBonus);
     } else if (archetype === "ranger") {
       character.inventory.set(0, "Bow")
     }
@@ -29,8 +27,3 @@ export default class Item {
     return character.inventory;
   }
 }
-
-// itemList {
-//   new Item(1, "Broadsword", 0, 10, 0, 0, 0, 0)
-//   new Item(1, "Broadsword", 0, 10, 0, 0, 0, 0)
-// }

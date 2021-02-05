@@ -3,6 +3,7 @@ export default class Character {
     this.name = name;
     this.archetype = archetype;
     this.level = 1;
+    this.health = 100;
     this.inventory = new Map(
       [
         [0, "weapon"],
@@ -38,5 +39,14 @@ export default class Character {
       this.wisdom -= 10;
       this.charisma += 20;
     }
+  }
+  attack(Boss) {
+    // if (Boss.health === 0) {
+    //   return `You are dead, Devil Ash!!!`;
+    //   // return 0;
+    // }
+    Boss.health -= this.strength;
+    this.health -= Boss.strength;
+    return `Your health is ${this.health} & Boss health is ${Boss.health}`;
   }
 }
